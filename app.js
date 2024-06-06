@@ -5,8 +5,8 @@ let humidity = document.querySelector('.humidity');
 let windspeed = document.querySelector('.windspeed');
 
 async function data(city) {
-    const APIkey = "7650d85f2b0b9c9af84f1e0c5def9447";
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}`;
+    const APIkey = /* your api key */;
+    const url = /* your api link */;
 
     let data_res = await fetch(url).then(response => response.json());
     console.log(data_res);
